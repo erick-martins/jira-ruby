@@ -6,7 +6,7 @@ require 'pry'
 
 Dir['./spec/support/**/*.rb'].each { |f| require f }
 
-require 'jira-ruby'
+require 'zk-jira-ruby'
 
 RSpec.configure do |config|
   config.extend ClientsHelper

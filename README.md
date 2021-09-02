@@ -1,19 +1,19 @@
 # JIRA API Gem
 
-[![Code Climate](https://codeclimate.com/github/sumoheavy/jira-ruby.svg)](https://codeclimate.com/github/sumoheavy/jira-ruby)
-[![Build Status](https://travis-ci.org/sumoheavy/jira-ruby.svg?branch=master)](https://travis-ci.org/sumoheavy/jira-ruby)
+[![Code Climate](https://codeclimate.com/github/sumoheavy/zk-jira-ruby.svg)](https://codeclimate.com/github/sumoheavy/zk-jira-ruby)
+[![Build Status](https://travis-ci.org/sumoheavy/zk-jira-ruby.svg?branch=master)](https://travis-ci.org/sumoheavy/zk-jira-ruby)
 
 This gem provides access to the Atlassian JIRA REST API.
 
 ## Slack
 
-Join our Slack channel! You can find us [here](https://jira-ruby-slackin.herokuapp.com/)
+Join our Slack channel! You can find us [here](https://zk-jira-ruby-slackin.herokuapp.com/)
 
 ## Example usage
 
 ```ruby
 require 'rubygems'
-require 'jira-ruby'
+require 'zk-jira-ruby'
 
 options = {
   :username     => 'username',
@@ -105,7 +105,7 @@ To enable cookie based authentication, set `:auth_type` to `:cookie`,
 set `:use_cookies` to `true` and set `:username` and `:password` accordingly.
 
 ```ruby
-require 'jira-ruby'
+require 'zk-jira-ruby'
 
 options = {
   :username           => 'username',
@@ -148,7 +148,7 @@ to an empty string in the options hash.
 ```ruby
 require 'rubygems'
 require 'pp'
-require 'jira-ruby'
+require 'zk-jira-ruby'
 
 # Consider the use of :use_ssl and :ssl_verify_mode options if running locally
 # for tests.
@@ -195,7 +195,7 @@ Ensure the JIRA gem is loaded correctly
 ```ruby
 # Gemfile
 ...
-gem 'jira-ruby', :require => 'jira-ruby'
+gem 'zk-jira-ruby', :require => 'zk-jira-ruby'
 ...
 ```
 
@@ -298,7 +298,7 @@ end
 Here's the same example as a Sinatra application:
 
 ```ruby
-require 'jira-ruby'
+require 'zk-jira-ruby'
 class App < Sinatra::Base
   enable :sessions
 
@@ -315,7 +315,7 @@ class App < Sinatra::Base
       :access_token_path  => "/plugins/servlet/oauth/access-token",
       :private_key_file   => "rsakey.pem",
       :rest_base_path     => "/rest/api/2",
-      :consumer_key       => "jira-ruby-example"
+      :consumer_key       => "zk-jira-ruby-example"
     }
 
     @jira_client = JIRA::Client.new(options)
@@ -338,7 +338,7 @@ class App < Sinatra::Base
     if !session[:jira_auth]
       # not logged in
       <<-eos
-        <h1>jira-ruby (JIRA 5 Ruby Gem) demo </h1>You're not signed in. Why don't you
+        <h1>zk-jira-ruby (JIRA 5 Ruby Gem) demo </h1>You're not signed in. Why don't you
         <a href=/signin>sign in</a> first.
       eos
     else
@@ -402,7 +402,7 @@ Here's an example on how to use 2 legged OAuth:
 ```ruby
 require 'rubygems'
 require 'pp'
-require 'jira-ruby'
+require 'zk-jira-ruby'
 
 options = {
             :site               => 'http://localhost:2990/',
@@ -411,7 +411,7 @@ options = {
             :private_key_file   => "rsakey.pem",
             :rest_base_path     => "/rest/api/2",
             :auth_type => :oauth_2legged,
-            :consumer_key       => "jira-ruby-example"
+            :consumer_key       => "zk-jira-ruby-example"
           }
 
 client = JIRA::Client.new(options)

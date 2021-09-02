@@ -2,14 +2,14 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 require 'jira/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'jira-ruby'
+  s.name        = 'zk-jira-ruby'
   s.version     = JIRA::VERSION
   s.authors     = ['SUMO Heavy Industries', 'test IO']
-  s.homepage    = 'http://www.sumoheavy.com'
+  s.homepage    = 'https://github.com/erick-martins/zk-jira'
   s.summary     = 'Ruby Gem for use with the Atlassian JIRA REST API'
   s.description = 'API for JIRA'
   s.licenses    = ['MIT']
-  s.metadata    = { 'source_code_uri' => 'https://github.com/sumoheavy/jira-ruby' }
+  s.metadata    = { 'source_code_uri' => 'https://github.com/erick-martins/zk-jira' }
 
   s.required_ruby_version = '>= 1.9.3'
 

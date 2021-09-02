@@ -1,4 +1,4 @@
-require 'jira-ruby'
+require 'zk-jira-ruby'
 require 'rails'
 
 module JIRA
