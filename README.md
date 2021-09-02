@@ -1,7 +1,7 @@
 # JIRA API Gem
 
-[![Code Climate](https://codeclimate.com/github/sumoheavy/zk-jira-ruby.svg)](https://codeclimate.com/github/erick-martins/zk-jira-ruby)
-[![Build Status](https://travis-ci.org/sumoheavy/zk-jira-ruby.svg?branch=master)](https://travis-ci.org/erick-martins/zk-jira-ruby)
+[![Code Climate](https://codeclimate.com/github/erick-martins/zk-jira-ruby.svg)](https://codeclimate.com/github/erick-martins/zk-jira-ruby)
+[![Build Status](https://travis-ci.org/erick-martins/zk-jira-ruby.svg?branch=master)](https://travis-ci.org/erick-martins/zk-jira-ruby)
 
 This gem provides access to the Atlassian JIRA REST API.
 
